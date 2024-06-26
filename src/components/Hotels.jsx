@@ -1,6 +1,6 @@
 const Hotels = () => {
   return (
-    <section className="border py-20">
+    <section id="Отели" className=" py-24">
       <div className="w-1/2 font-medium text-xl">
         <h1 className="text-4xl font-extrabold">
           Отели. <span className="text-gray-500">Новое строительство.</span>

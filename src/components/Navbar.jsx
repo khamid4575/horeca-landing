@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-5 z-50  ${
+      className={`py-5 z-50 ${
         isScrolled ? "bg-gray-50 sticky top-0" : "bg-transparent"
       }`}
     >
