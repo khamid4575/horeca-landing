@@ -1,6 +1,13 @@
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
-import Hotels from "./components/Hotels";
+import HotelsInActive from "./components/HotelsInActive";
+import HotelsInConstruction from "./components/HotelsInConstruction";
 import Navbar from "./components/Navbar";
+import Restaurants from "./components/Restaurants";
+import Services from "./components/Services";
+import Shipping from "./components/Shipping";
+import ScrollToTopIcon from "./components/ui/ScrollToTopIcon";
 
 function App() {
   return (
@@ -8,8 +15,15 @@ function App() {
       <Navbar />
       <HeroSection />
       <div className="2xl:w-[1700px] lg:w-[1200px] mx-auto">
-        <Hotels />
+        <ScrollToTopIcon/>
+        <HotelsInConstruction />
+        <HotelsInActive />
+        <Restaurants />
+        <Services />
+        <Shipping />
+        <Contacts />
       </div>
+      <Footer />
     </>
   );
 }

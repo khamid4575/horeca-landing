@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  ul, ol {
+    list-style: revert;
+  }
+}
+
 body {
   font-family: "Calibri", "Arial", sans-serif;
 }
