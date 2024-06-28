@@ -21,7 +21,7 @@ const ScrollToTopIcon = () => {
     <div>
       {isVisible && (
         <div
-          className="fixed bottom-10 flex justify-center items-center right-10 p-2 bg-gray-300 text-white rounded-full cursor-pointer"
+          className="fixed bottom-10 flex justify-center items-center right-10 p-1.5 bg-gray-200 text-white rounded-full cursor-pointer"
           onClick={handleClick}
         >
           <i class='bx bx-chevron-up text-5xl text-gray-500'></i>

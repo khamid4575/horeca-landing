@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
-      <div className="2xl:w-[1700px] lg:w-[1200px] mx-auto">
+      <div className="2xl:w-[1700px] lg:w-[1200px] mx-auto px-5 md:px-10 lg:px-0">
         <ScrollToTopIcon/>
         <HotelsInConstruction />
         <HotelsInActive />

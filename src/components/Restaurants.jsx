@@ -1,31 +1,32 @@
+import { useTranslation } from "react-i18next";
+
 const Restaurants = () => {
+  const { t } = useTranslation("global");
+
   return (
-    <section id="Рестораны" className=" pt-24">
-      <div className="w-1/2 font-medium text-xl">
+    <section id="Рестораны" className="pt-24">
+      <div className="lg:w-1/2 font-medium text-xl">
         <h1 className="text-4xl font-extrabold">
-          Рестораны и бары.{" "}
-          <span className="text-gray-500">Строящиеся и действующие.</span>
+          {t('restaurantsAndBars.title')} {" "}
+          <span className="text-gray-500">{t('restaurantsAndBars.inOperationAndConstruction')}</span>
         </h1>
         <p className="font-medium text-xl my-5">
-          На нашей площадке вы сможете приобрести профессиональное оборудование
-          для ресторанного бизнеса.
+          {t('restaurantsAndBars.offer')}
         </p>
         <p className="font-medium text-xl">
-          Мы представляем ведущих поставщиков для:
+          {t('hotelInConstruction.offer')}
         </p>
         <ul className="mb-5 list-disc list-inside">
-          <li>Инженерных систем</li>
-          <li>Инженерных систем</li>
-          <li>Противопожарных систем, оборудования и мебели</li>
-          <li>Оборудования для ресторанов и баров</li>
-          <li>ИТ-оборудования и программного обеспечения</li>
-          <li>Гигиена и расходники</li>
-          <li>Инвентарь для уборки и проффесиональная химия</li>
-          <li>Одноразовая посуда и упаковка</li>
+          <li>{t('hotelInConstruction.engineeringSystems')}</li>
+          <li>{t('fireProtectionSystems')}</li>
+          <li>{t('hotelInConstruction.equipmentForRestaurants')}</li>
+          <li>{t('hotelInConstruction.ITEquipment')}</li>
+          <li>{t('restaurantsAndBars.hygieneAndConsumables')}</li>
+          <li>{t('restaurantsAndBars.cleaningEquipment')}</li>
+          <li>{t('restaurantsAndBars.packaging')}</li>
         </ul>
         <p>
-          Сделайте запрос уже сейчас и получите каталог с расценками на товары
-          для заказа.
+          {t('restaurantsAndBars.makeARequestNow')}
         </p>
       </div>
       <div></div>

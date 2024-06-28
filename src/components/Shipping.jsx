@@ -1,34 +1,31 @@
+import { useTranslation } from "react-i18next";
+
 const Shipping = () => {
+  const { t } = useTranslation("global");
+
   return (
     <section id="shipping" className="pt-24">
-      <div className="w-10/12 font-medium text-xl">
+      <div className="lg:w-10/12 font-medium text-xl">
         <h1 className="text-4xl font-extrabold">
-          Доставка и оплата.{" "}
-          <span className="text-gray-500">Товаров и услуг.</span>
+          {t('navbar.shipping')}.{" "}
+          <span className="text-gray-500">{t('shippingAndPayment.productAndService')}</span>
         </h1>
         <p className="my-5">
-          Мы обеспечиваем отработанные логистические цепочки поставок напрямую
-          от поставщиков. Свой склад в Ташкенте, курьеры и транспорт позволят
-          сократить время доставки.
+          {t('shippingAndPayment.logistics')}
         </p>
-        <p>Вы можете выбрать один из двух вариантов оплаты:</p>
+        <p>{t('shippingAndPayment.paymentMethods')}</p>
         <p className="my-5">
-          Оплата наличными
+          {t('shippingAndPayment.cashPayment')}
           <br />
-          При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера и
-          передаёте ему сумму за товар в рублях. Курьер предоставляет товар,
-          который можно осмотреть на предмет повреждений, соответствие указанным
-          условиям. Покупатель подписывает товаросопроводительные документы,
-          вносит денежные средства и получает чек.
+          {t('shippingAndPayment.cashPaymentProcess')}
         </p>
         <p>
-          Также оплата наличными доступна при самовывозе из магазина, оплаты по
-          почте или использовании постамата.
+          {t('shippingAndPayment.advantageOfPayingWitchCash')}
         </p>
         <p className="mt-5">
-          Безналичный расчёт
+          {t('shippingAndPayment.cashlessPayments')}
           <br />
-          Мы принимаем карты Visa и Master Card.
+          {t('shippingAndPayment.visaAndMasterCard')}
         </p>
       </div>
       <div></div>

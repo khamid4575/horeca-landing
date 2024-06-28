@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Button from "./ui/Button";
+import { useTranslation } from "react-i18next";
 
 const Contacts = () => {
+  const { t } = useTranslation("global");
   const [formData, setFormData] = useState({
     email: "",
     fullname: "",
@@ -21,14 +23,14 @@ const Contacts = () => {
   return (
     <section
       id="Контакты"
-      className="flex justify-between  items-center w-11/12 pt-24 mb-12"
+      className="flex md:flex-row flex-col md:gap-0 gap-10 justify-between items-center lg:w-11/12 pt-24 mb-12"
     >
       <div>
         <h1 className="text-4xl font-extrabold">
-          Контакты.{" "}
-          <span className="text-gray-500">Свяжитесь с нами уже сегодня.</span>
+          {t("navbar.contacts")}.{" "}
+          <span className="text-gray-500">{t("contacts.contactUsToday")}</span>
         </h1>
-        <form className="w-3/4">
+        <form className="md:w-3/4 w-full">
           <div className="my-5 group">
             <input
               type="email"
@@ -37,7 +39,7 @@ const Contacts = () => {
               required
               value={formData.email}
               onChange={handleChange}
-              placeholder="ФИО"
+              placeholder={t("contacts.FIO")}
             />
           </div>
           <div className="mb-5 group">
@@ -47,7 +49,7 @@ const Contacts = () => {
               className="block p-1.5 w-full text-lg text-gray-900 bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 rounded-lg"
               value={formData.fullname}
               onChange={handleChange}
-              placeholder="Телефон"
+              placeholder={t("contacts.phone")}
             />
           </div>
           <div className="mb-5 group">
@@ -67,23 +69,21 @@ const Contacts = () => {
               className="block p-1.5 rounded-lg w-full text-lg text-gray-900 bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Ваш запрос"
+              placeholder={t("contacts.yourRequest")}
             />
           </div>
-          <Button variant="secondary"><p className="text-lg">Отправить</p></Button>
+          <Button variant="secondary">
+            <p className="text-lg">{t("contacts.send")}</p>
+          </Button>
         </form>
       </div>
       <div className="font-medium text-xl">
-        <h1 className="text-3xl font-bold">Адрес</h1>
-        <p className="my-5">
-          Узбекистан, 100100, Ташкент, Яккасарайский район, улица Бобура 34
-        </p>
+        <h1 className="text-3xl font-bold">{t("contacts.address")}</h1>
+        <p className="my-5">{t("contacts.locattion")}</p>
         <p>+998 (71) 888-88-88</p>
         <p className="my-5">order@supplypartners.uz</p>
-        <h1 className="text-3xl font-bold">Часы работы</h1>
-        <p className="mt-5">
-          Мы работаем для вас с понедельника по пятницу с 09:00 до 18:00
-        </p>
+        <h1 className="text-3xl font-bold">{t("contacts.workOur")}</h1>
+        <p className="mt-5">{t("contacts.mondayToFriday")}</p>
       </div>
     </section>
   );

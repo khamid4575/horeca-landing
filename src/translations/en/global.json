@@ -1,0 +1,82 @@
+{
+  "navbar": {
+    "hotels": "Hotels",
+    "restaurants": "Restaurants",
+    "services": "Services",
+    "shipping": "Shipping & Payment",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "B2B PLATFORM FOR HORECA",
+    "inUzb": "IN UZBEKISTAN",
+    "description": "Here you purchase quality products at reasonable prices directly from leading manufacturers with clear delivery times and at the time you need",
+    "button": "Place an order"
+  },
+  "hotelInConstruction": {
+    "newConstruction": "New Construction.",
+    "ourB2Bplatform": "On our B2B platform, you can purchase products accredited by international hotel brands for projects of any scale and star rating.",
+    "offer": "We present leading suppliers for:",
+    "FF&OS": "FF&E and OS&E",
+    "engineeringSystems": "Engineering systems",
+    "equipmentForRestaurants": "Restaurant and bar equipment",
+    "laundryEquipment": "Laundry equipment",
+    "optimizingUtilityCosts": "Utility cost optimization systems",
+    "ITEquipment": "IT equipment and software"
+  },
+  "hotelInOperation": {
+    "inOperation": "In Operation.",
+    "offer": "Whether you are a boutique hotel with up to 100 rooms or a full-service hotel with over 100 rooms, on our platform you can purchase products accredited by international hotel brands for the following services of your hotel:",
+    "receptionService": "Reception and accommodation service",
+    "housekeeping": "Housekeeping or room maintenance service",
+    "engineeringService": "Engineering service",
+    "foodService": "Food service",
+    "securityService": "Security service"
+  },
+  "restaurantsAndBars": {
+    "inOperationAndConstruction": "Under construction and operating.",
+    "offer": "On our platform, you can purchase professional equipment for the restaurant business.",
+    "hygieneAndConsumables": "Hygiene and consumables",
+    "cleaningEquipment": "Cleaning equipment and professional chemistry",
+    "packaging": "Disposable tableware and packaging",
+    "makeARequestNow": "Make a request now and get a catalog with prices for ordering goods."
+  },
+  "services": {
+    "forHotelAndRestaurantBusiness": "For the hotel and restaurant business.",
+    "offer": "We can provide the following services:",
+    "hotelConsultantForMarketResearch": "Selection of an international hotel consultant for market research",
+    "architectForTheProject": "Selection of an architect for the project",
+    "accreditedInteriorDesigners": "Selection of accredited interior designers",
+    "technicalConsultantForProjectManager": "Selection of a technical consultant for the project (project manager)",
+    "specializedConsultants": "Selection of specialized consultants (for fire safety, soundproofing, kitchen technology, etc.)",
+    "managementCompanies": "Selection of management companies",
+    "generalManagerSelection": "Selection of a general manager",
+    "selectionAndNegotiations": "Selection and negotiations with international hotel brands",
+    "trainings": "À la carte training for hotel, restaurant, or bar staff (revenue management, etc.)"
+  },
+  "shippingAndPayment": {
+    "productAndService": "Products and services.",
+    "logistics": "We ensure well-established supply chains directly from suppliers. Our own warehouse in Tashkent, couriers, and transport allow us to reduce delivery times.",
+    "paymentMethods": "You can choose one of two payment options:",
+    "cashPayment": "Cash payment",
+    "cashPaymentProcess": "When choosing cash payment, you wait for the courier to arrive and hand over the amount for the goods in rubles. The courier provides the goods, which can be inspected for damage, compliance with the stated conditions. The buyer signs the accompanying documents, pays the money, and receives a receipt.",
+    "advantageOfPayingWithCash": "Cash payment is also available for self-pickup from the store, payment by mail, or using a parcel locker.",
+    "cashlessPayments": "Cashless payment",
+    "visaAndMasterCard": "We accept Visa and MasterCard."
+  },
+  "contacts": {
+    "contactUsToday": "Contact us today.",
+    "FIO": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "yourRequest": "Your request",
+    "send": "Send",
+    "address": "Address",
+    "location": "Uzbekistan, 100100, Tashkent, Yakkasaray district, Bobur street 34",
+    "workHours": "Working hours",
+    "mondayToFriday": "We work for you from Monday to Friday from 09:00 to 18:00"
+  },
+  "fireProtectionSystems": "Fire protection systems, equipment, and furniture",
+  "motto": "Develop your business in HORECA with a reliable partner. Make a request now and get a catalog with prices for ordering goods.",
+  "allRightsReserved": "All rights reserved",
+  "personalDataPolicy": "Personal data policy"
+}

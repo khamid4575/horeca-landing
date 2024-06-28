@@ -1,43 +1,31 @@
+import { useTranslation } from "react-i18next";
+
 const Services = () => {
+  const { t } = useTranslation("global");
+
   return (
     <section id="Услуги" className="pt-24">
-      <div className="w-2/3 font-medium text-xl">
+      <div className="lg:w-2/3 font-medium text-xl">
         <h1 className="text-4xl font-extrabold">
-          Услуги.{" "}
+          {t('navbar.services')}. {" "}
           <span className="text-gray-500">
-            Для гостиничного ресторанного бизнеса.
+            {t('services.forHotelAndRestaurantBusiness')}
           </span>
         </h1>
-        <p className="mt-5">
-          Мы сможем предоставить следующие услуги:
-        </p>
+        <p className="mt-5">{t('services.offer')}</p>
         <ul className="mb-5 list-disc list-inside">
-          <li>
-            Подбор международного гостиничного консультанта для исследования
-            рынка
-          </li>
-          <li>Подбор архитектора для проекта</li>
-          <li>Подбор аккредитованных дизайнеров интерьеров</li>
-          <li>
-            Подбор техническоко консультанта для проекта (проектного менеджера)
-          </li>
-          <li>
-            Подбор специализированных консультантов (по пожарной безопасности,
-            шумоизоляции, технологии кухни и др.)
-          </li>
-          <li>Подбор управляющих компаний</li>
-          <li>Подбор генерального управляющего</li>
-          <li>
-            Подбор и ведение переговоров с международными гостиничными брендами
-          </li>
-          <li>
-            Тренинги «a la carte» для персонала отеля, ресторана или бара
-            (revenue management и др.)
-          </li>
+          <li>{t('services.hotelConsultantForMarketResearch')}</li>
+          <li>{t('services.architectForTheProject')}</li>
+          <li>{t('services.accreditedInteriorDesigners')}</li>
+          <li>{t('services.technicalConsultantForProjectManager')}</li>
+          <li>{t('services.specializedConsultants')}</li>
+          <li>{t('services.managementCompanies')}</li>
+          <li>{t('services.generalManagerSelection')}</li>
+          <li>{t('services.selectionAndNegotiations')}</li>
+          <li>{t('services.trainings')}</li>
         </ul>
         <p>
-          Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос
-          уже сейчас и получите каталог с расценками на услуги для заказа.
+          {t('motto')}
         </p>
       </div>
       <div></div>
