@@ -13,9 +13,9 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${hero})` }}
       ></div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 -z-10"></div>
-      <div className="flex lg:top-14 border absolute inset-0 lg:px-0 px-5 items-center 2xl:w-[1700px] lg:w-[1200px] mx-auto">
+      <div className="flex lg:top-14 absolute inset-0 lg:px-0 px-5 items-center 2xl:w-[1700px] lg:w-[1200px] mx-auto">
         <div className="lg:text-start text-center">
-          <h1 className="text-white text-4xl font-bold uppercase">
+          <h1 className="text-white lg:text-4xl text-3xl font-bold uppercase">
             {currentLanguage === "uz" ? (
               <>
                 Horeca uchun O'zbekistondagi <br />
@@ -27,12 +27,12 @@ const HeroSection = () => {
               </>
             )}
           </h1>
-          <p className="text-2xl lg:w-1/2 text-white font-medium my-3">
+          <p className="lg:text-2xl lg:w-1/2 text-white font-medium my-3">
             {t("hero.description")}
           </p>
           <a href="#Контакты">
             <Button variant="primary">
-              <p className="text-xl">{t("hero.button")}</p>
+              <p className="lg:text-xl text-lg">{t("hero.button")}</p>
             </Button>
           </a>
         </div>

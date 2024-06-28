@@ -5,8 +5,8 @@ const Services = () => {
 
   return (
     <section id="Услуги" className="pt-24">
-      <div className="lg:w-2/3 font-medium text-xl">
-        <h1 className="text-4xl font-extrabold">
+      <div className="lg:w-2/3 font-medium lg:text-xl">
+        <h1 className="lg:ext-4xl text-3xl font-extrabold">
           {t('navbar.services')}. {" "}
           <span className="text-gray-500">
             {t('services.forHotelAndRestaurantBusiness')}

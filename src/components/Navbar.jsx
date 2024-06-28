@@ -97,10 +97,16 @@ const Navbar = () => {
             !isScrolled && "text-white"
           }`}
         >
-          <a href="#" className="z-50">Supply partners</a>
+          <a href="#" className="z-50">
+            Supply partners
+          </a>
         </h1>
         <div className="flex">
-          <div className={`hidden z-50 lg:flex gap-8 ${isScrolled ? "mr-0" : "mr-20"}`}>
+          <div
+            className={`hidden z-50 lg:flex gap-8 ${
+              isScrolled ? "mr-0" : "mr-20"
+            }`}
+          >
             {links.map((link, index) => (
               <a
                 key={index}
@@ -112,12 +118,17 @@ const Navbar = () => {
             ))}
           </div>
           {!isPastFirstSection && (
-            <div className={`hidden z-50 lg:flex text-white ${isScrolled && "hidden"}`}>
+            <div
+              className={`hidden z-50 lg:flex text-white ${
+                isScrolled && "hidden"
+              }`}
+            >
               <LanguageSelector />
             </div>
           )}
           <div className="lg:hidden flex items-center justify-end z-50">
-            <Button variant="phone"
+            <Button
+              variant={`${isScrolled ? "scroll" : "phone"}`}
               // onClick={toggleDropdown}
               // aria-expanded={isDropdownOpen}
               aria-controls="mobile-menu"

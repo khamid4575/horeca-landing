@@ -5,8 +5,8 @@ const Shipping = () => {
 
   return (
     <section id="shipping" className="pt-24">
-      <div className="lg:w-10/12 font-medium text-xl">
-        <h1 className="text-4xl font-extrabold">
+      <div className="lg:w-10/12 font-medium lg:text-xl">
+        <h1 className="lg:text-4xl text-3xl font-extrabold">
           {t('navbar.shipping')}.{" "}
           <span className="text-gray-500">{t('shippingAndPayment.productAndService')}</span>
         </h1>
