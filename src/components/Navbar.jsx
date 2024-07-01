@@ -103,7 +103,7 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center 2xl:w-[1700px] lg:w-[1200px] w-full mx-auto lg:px-0 px-5">
           <h1
-            className={`uppercase 2xl:text-3xl text-2xl font-extrabold  ${
+            className={`uppercase 2xl:text-3xl lg:text-2xl text-xl font-extrabold  ${
               !isScrolled && "text-white"
             }`}
           >
