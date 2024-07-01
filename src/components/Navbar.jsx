@@ -155,7 +155,6 @@ const Navbar = () => {
         } transition-transform duration-300 ease-in-out z-50`}
       >
         <div className="flex justify-between items-center p-5">
-          {/* <LanguageSelector /> */}
           {isSidebarOpen && <LanguageSelector />}
           <button onClick={handleSidebarClose} className="text-3xl">
             &times;
@@ -174,6 +173,17 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <div className="flex justify-center items-center">
+          <a href="#">
+            <i class="bx bxl-linkedin text-2xl"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-facebook text-2xl"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-instagram text-2xl"></i>
+          </a>
+        </div>
       </div>
 
       {/* Overlay */}
