@@ -173,15 +173,15 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center space-x-5">
           <a href="#">
-            <i class="bx bxl-linkedin text-2xl"></i>
+            <i class="bx bxl-linkedin text-3xl"></i>
           </a>
           <a href="#">
-            <i class="bx bxl-facebook text-2xl"></i>
+            <i class="bx bxl-facebook text-3xl"></i>
           </a>
           <a href="#">
-            <i class="bx bxl-instagram text-2xl"></i>
+            <i class="bx bxl-instagram text-3xl"></i>
           </a>
         </div>
       </div>
