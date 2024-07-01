@@ -97,7 +97,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`py-5 z-50 ${
+        className={`py-5 z-40 ${
           isScrolled ? "bg-gray-50 sticky top-0" : "bg-transparent"
         }`}
       >
@@ -161,7 +161,7 @@ const Navbar = () => {
             &times;
           </button>
         </div>
-        <ul className="flex flex-col p-5 mt-10 list-none">
+        <ul className="flex flex-col p-5 mt-14 list-none">
           {links.map((link, index) => (
             <li key={index} className="py-2">
               <a
