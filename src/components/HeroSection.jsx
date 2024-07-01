@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 -z-10"></div>
       <div className="flex lg:top-14 absolute inset-0 lg:px-0 px-5 items-center 2xl:w-[1700px] lg:w-[1200px] mx-auto">
         <div className="lg:text-start text-center">
-          <h1 className="text-white lg:text-4xl text-3xl font-bold uppercase">
+          <h1 className="text-white 2xl:text-5xl lg:text-4xl text-3xl font-bold uppercase">
             {currentLanguage === "uz" ? (
               <>
                 Horeca uchun O'zbekistondagi <br />
