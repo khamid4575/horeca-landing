@@ -80,6 +80,12 @@
     "allRightsReserved": "Barcha huquqlar himoyalangan",
     "personalDataPolicy": "Shaxsiy ma'lumotlar siyosati"
   },
+  "swal": {
+    "success": "Muvaffaqiyatli!",
+    "successText": "Xabar muvaffaqiyatli yuborildi",
+    "error": "Xato!",
+    "errorText": "Xabar yuborilmadi"
+  },
   "fireProtectionSystems": "Yong'inga qarshi tizimlar, uskunalar va mebel",
   "motto": "HORECA biznesingizni ishonchli hamkor bilan rivojlantiring. Hozir so'rov qiling va buyurtma berish uchun mahsulotlar narxlari katalogini oling."
 }
