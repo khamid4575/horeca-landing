@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./ui/Button";
 import { useTranslation } from "react-i18next";
+import Swal from "sweetalert2";
 
 const Contacts = () => {
   const { t } = useTranslation("global");
@@ -20,6 +21,78 @@ const Contacts = () => {
     });
   };
 
+  const validatePhoneNumber = (phoneNumber) => {
+    const phoneNumberRegex = /^(?:\+?998)?\s?\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$/;
+    return phoneNumberRegex.test(phoneNumber);
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex =
+      /^([a-zA-Z0-9._%+-]{3,})+@([a-zA-Z0-9.-]{2,})+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { email, fullname, phoneNumber, message } = formData;
+
+    if (!validatePhoneNumber(phoneNumber) || !validateEmail(email)) {
+      Swal.fire({
+        title: "Error!",
+        text: "Invalid phone number",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+      return;
+    }
+
+    const text = `Email: ${email}\nFull Name: ${fullname}\nPhone Number: ${phoneNumber}\nMessage: ${message}`;
+
+    try {
+      const response = await fetch("/api/sendMessage", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: "-1002159191350",
+          text: text,
+        }),
+      });
+
+      if (response.ok) {
+        Swal.fire({
+          title: t("swal.success"),
+          text: t("swal.successText"),
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+        setFormData({
+          email: "",
+          fullname: "",
+          phoneNumber: "",
+          message: "",
+        });
+      } else {
+        Swal.fire({
+          title: t("swal.error"),
+          text: t("swal.errorText"),
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      Swal.fire({
+        title: "Error!",
+        text: "Error sending message",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
+
+
   return (
     <section
       id="Контакты"
@@ -30,7 +103,7 @@ const Contacts = () => {
           {t("navbar.contacts")}.{" "}
           <span className="text-gray-500">{t("contacts.contactUsToday")}</span>
         </h1>
-        <form className="md:w-3/4 w-full">
+        <form className="md:w-3/4 w-full" onSubmit={handleSubmit}>
           <div className="my-5 group">
             <input
               type="email"
@@ -39,7 +112,7 @@ const Contacts = () => {
               required
               value={formData.email}
               onChange={handleChange}
-              placeholder={t("contacts.FIO")}
+              placeholder={t("contacts.email")}
             />
           </div>
           <div className="mb-5 group">
@@ -49,7 +122,7 @@ const Contacts = () => {
               className="block p-1.5 w-full lg:text-lg text-gray-900 bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 rounded-lg"
               value={formData.fullname}
               onChange={handleChange}
-              placeholder={t("contacts.phone")}
+              placeholder={t("contacts.FIO")}
             />
           </div>
           <div className="mb-5 group">
@@ -60,7 +133,7 @@ const Contacts = () => {
               required
               value={formData.phoneNumber}
               onChange={handleChange}
-              placeholder="Email"
+              placeholder={t("contacts.phone")}
             />
           </div>
           <div className="mb-5 group">
