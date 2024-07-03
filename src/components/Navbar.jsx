@@ -175,13 +175,13 @@ const Navbar = () => {
         </ul>
         <div className="flex justify-center items-center space-x-5">
           <a href="https://www.linkedin.com/">
-            <i class="bx bxl-linkedin text-3xl"></i>
+            <i className="bx bxl-linkedin text-3xl"></i>
           </a>
           <a href="https://www.facebook.com/">
-            <i class="bx bxl-facebook text-3xl"></i>
+            <i className="bx bxl-facebook text-3xl"></i>
           </a>
           <a href="https://www.instagram.com/">
-            <i class="bx bxl-instagram text-3xl"></i>
+            <i className="bx bxl-instagram text-3xl"></i>
           </a>
         </div>
       </div>

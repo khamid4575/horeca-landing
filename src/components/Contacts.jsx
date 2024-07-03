@@ -74,6 +74,7 @@ const Contacts = () => {
           message: "",
         });
       } else {
+        console.log(response);
         Swal.fire({
           title: t("swal.error"),
           text: t("swal.errorText"),

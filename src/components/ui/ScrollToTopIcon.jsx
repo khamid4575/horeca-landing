@@ -24,7 +24,7 @@ const ScrollToTopIcon = () => {
           className="fixed lg:bottom-10 bottom-5 flex justify-center items-center lg:right-10 right-5 lg:p-1.5 p-1 bg-gray-200 text-white rounded-full cursor-pointer"
           onClick={handleClick}
         >
-          <i class='bx bx-chevron-up text-5xl text-gray-500'></i>
+          <i className='bx bx-chevron-up text-5xl text-gray-500'></i>
         </div>
       )}
     </div>
